@@ -1,0 +1,365 @@
+﻿<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>User</LastAuthor>
+  <LastSaved>2026-05-23T23:54:00Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>6470</WindowHeight>
+  <WindowWidth>19200</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" ss:Size="12" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" ss:Bold="1"/>
+   <Interior ss:Color="#D9EAF7" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="MergeSort">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="32" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:Width="90" ss:Span="1"/>
+   <Column ss:Index="3" ss:Width="210"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="210"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="210"/>
+   <Row ss:Height="15.5">
+    <Cell ss:Index="2" ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Случайные массивы</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Обратно отсортированные</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s63"><Data ss:Type="String">Почти отсортированные</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">n</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">t, мкс</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Количество посимвольных сравнений</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">t, мкс</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Количество посимвольных сравнений</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">t, мкс</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Количество посимвольных сравнений</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">135</Data></Cell>
+    <Cell><Data ss:Type="Number">611</Data></Cell>
+    <Cell><Data ss:Type="Number">115</Data></Cell>
+    <Cell><Data ss:Type="Number">594</Data></Cell>
+    <Cell><Data ss:Type="Number">107</Data></Cell>
+    <Cell><Data ss:Type="Number">816</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell><Data ss:Type="Number">437</Data></Cell>
+    <Cell><Data ss:Type="Number">1524</Data></Cell>
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell><Data ss:Type="Number">1293</Data></Cell>
+    <Cell><Data ss:Type="Number">291</Data></Cell>
+    <Cell><Data ss:Type="Number">1801</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell><Data ss:Type="Number">565</Data></Cell>
+    <Cell><Data ss:Type="Number">2539</Data></Cell>
+    <Cell><Data ss:Type="Number">573</Data></Cell>
+    <Cell><Data ss:Type="Number">2071</Data></Cell>
+    <Cell><Data ss:Type="Number">610</Data></Cell>
+    <Cell><Data ss:Type="Number">2856</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">400</Data></Cell>
+    <Cell><Data ss:Type="Number">610</Data></Cell>
+    <Cell><Data ss:Type="Number">3671</Data></Cell>
+    <Cell><Data ss:Type="Number">739</Data></Cell>
+    <Cell><Data ss:Type="Number">2823</Data></Cell>
+    <Cell><Data ss:Type="Number">785</Data></Cell>
+    <Cell><Data ss:Type="Number">4131</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">500</Data></Cell>
+    <Cell><Data ss:Type="Number">920</Data></Cell>
+    <Cell><Data ss:Type="Number">4830</Data></Cell>
+    <Cell><Data ss:Type="Number">1004</Data></Cell>
+    <Cell><Data ss:Type="Number">3721</Data></Cell>
+    <Cell><Data ss:Type="Number">1068</Data></Cell>
+    <Cell><Data ss:Type="Number">5230</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">600</Data></Cell>
+    <Cell><Data ss:Type="Number">1168</Data></Cell>
+    <Cell><Data ss:Type="Number">6098</Data></Cell>
+    <Cell><Data ss:Type="Number">1280</Data></Cell>
+    <Cell><Data ss:Type="Number">4405</Data></Cell>
+    <Cell><Data ss:Type="Number">1225</Data></Cell>
+    <Cell><Data ss:Type="Number">6487</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">700</Data></Cell>
+    <Cell><Data ss:Type="Number">1557</Data></Cell>
+    <Cell><Data ss:Type="Number">7424</Data></Cell>
+    <Cell><Data ss:Type="Number">1453</Data></Cell>
+    <Cell><Data ss:Type="Number">5191</Data></Cell>
+    <Cell><Data ss:Type="Number">1226</Data></Cell>
+    <Cell><Data ss:Type="Number">7804</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">800</Data></Cell>
+    <Cell><Data ss:Type="Number">1760</Data></Cell>
+    <Cell><Data ss:Type="Number">8798</Data></Cell>
+    <Cell><Data ss:Type="Number">1735</Data></Cell>
+    <Cell><Data ss:Type="Number">6067</Data></Cell>
+    <Cell><Data ss:Type="Number">1837</Data></Cell>
+    <Cell><Data ss:Type="Number">9084</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">900</Data></Cell>
+    <Cell><Data ss:Type="Number">2180</Data></Cell>
+    <Cell><Data ss:Type="Number">10186</Data></Cell>
+    <Cell><Data ss:Type="Number">1880</Data></Cell>
+    <Cell><Data ss:Type="Number">6944</Data></Cell>
+    <Cell><Data ss:Type="Number">1918</Data></Cell>
+    <Cell><Data ss:Type="Number">10314</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell><Data ss:Type="Number">2890</Data></Cell>
+    <Cell><Data ss:Type="Number">11562</Data></Cell>
+    <Cell><Data ss:Type="Number">2648</Data></Cell>
+    <Cell><Data ss:Type="Number">8029</Data></Cell>
+    <Cell><Data ss:Type="Number">2925</Data></Cell>
+    <Cell><Data ss:Type="Number">11565</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1100</Data></Cell>
+    <Cell><Data ss:Type="Number">4221</Data></Cell>
+    <Cell><Data ss:Type="Number">13076</Data></Cell>
+    <Cell><Data ss:Type="Number">3723</Data></Cell>
+    <Cell><Data ss:Type="Number">8628</Data></Cell>
+    <Cell><Data ss:Type="Number">3697</Data></Cell>
+    <Cell><Data ss:Type="Number">12836</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1200</Data></Cell>
+    <Cell><Data ss:Type="Number">2899</Data></Cell>
+    <Cell><Data ss:Type="Number">14501</Data></Cell>
+    <Cell><Data ss:Type="Number">2806</Data></Cell>
+    <Cell><Data ss:Type="Number">9479</Data></Cell>
+    <Cell><Data ss:Type="Number">2853</Data></Cell>
+    <Cell><Data ss:Type="Number">14324</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1300</Data></Cell>
+    <Cell><Data ss:Type="Number">3337</Data></Cell>
+    <Cell><Data ss:Type="Number">16041</Data></Cell>
+    <Cell><Data ss:Type="Number">2947</Data></Cell>
+    <Cell><Data ss:Type="Number">10321</Data></Cell>
+    <Cell><Data ss:Type="Number">3073</Data></Cell>
+    <Cell><Data ss:Type="Number">16177</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1400</Data></Cell>
+    <Cell><Data ss:Type="Number">4808</Data></Cell>
+    <Cell><Data ss:Type="Number">17611</Data></Cell>
+    <Cell><Data ss:Type="Number">3233</Data></Cell>
+    <Cell><Data ss:Type="Number">11068</Data></Cell>
+    <Cell><Data ss:Type="Number">3177</Data></Cell>
+    <Cell><Data ss:Type="Number">17574</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1500</Data></Cell>
+    <Cell><Data ss:Type="Number">3587</Data></Cell>
+    <Cell><Data ss:Type="Number">19144</Data></Cell>
+    <Cell><Data ss:Type="Number">3348</Data></Cell>
+    <Cell><Data ss:Type="Number">12024</Data></Cell>
+    <Cell><Data ss:Type="Number">3617</Data></Cell>
+    <Cell><Data ss:Type="Number">18962</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1600</Data></Cell>
+    <Cell><Data ss:Type="Number">3693</Data></Cell>
+    <Cell><Data ss:Type="Number">20706</Data></Cell>
+    <Cell><Data ss:Type="Number">4543</Data></Cell>
+    <Cell><Data ss:Type="Number">12977</Data></Cell>
+    <Cell><Data ss:Type="Number">4013</Data></Cell>
+    <Cell><Data ss:Type="Number">20397</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1700</Data></Cell>
+    <Cell><Data ss:Type="Number">5798</Data></Cell>
+    <Cell><Data ss:Type="Number">22273</Data></Cell>
+    <Cell><Data ss:Type="Number">4203</Data></Cell>
+    <Cell><Data ss:Type="Number">13917</Data></Cell>
+    <Cell><Data ss:Type="Number">3904</Data></Cell>
+    <Cell><Data ss:Type="Number">21798</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1800</Data></Cell>
+    <Cell><Data ss:Type="Number">4911</Data></Cell>
+    <Cell><Data ss:Type="Number">23917</Data></Cell>
+    <Cell><Data ss:Type="Number">3977</Data></Cell>
+    <Cell><Data ss:Type="Number">14867</Data></Cell>
+    <Cell><Data ss:Type="Number">4452</Data></Cell>
+    <Cell><Data ss:Type="Number">23182</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1900</Data></Cell>
+    <Cell><Data ss:Type="Number">5293</Data></Cell>
+    <Cell><Data ss:Type="Number">25524</Data></Cell>
+    <Cell><Data ss:Type="Number">5342</Data></Cell>
+    <Cell><Data ss:Type="Number">15880</Data></Cell>
+    <Cell><Data ss:Type="Number">6323</Data></Cell>
+    <Cell><Data ss:Type="Number">24583</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2000</Data></Cell>
+    <Cell><Data ss:Type="Number">6025</Data></Cell>
+    <Cell><Data ss:Type="Number">27158</Data></Cell>
+    <Cell><Data ss:Type="Number">5960</Data></Cell>
+    <Cell><Data ss:Type="Number">17023</Data></Cell>
+    <Cell><Data ss:Type="Number">7318</Data></Cell>
+    <Cell><Data ss:Type="Number">25770</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2100</Data></Cell>
+    <Cell><Data ss:Type="Number">8022</Data></Cell>
+    <Cell><Data ss:Type="Number">28830</Data></Cell>
+    <Cell><Data ss:Type="Number">5803</Data></Cell>
+    <Cell><Data ss:Type="Number">17897</Data></Cell>
+    <Cell><Data ss:Type="Number">6191</Data></Cell>
+    <Cell><Data ss:Type="Number">27073</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2200</Data></Cell>
+    <Cell><Data ss:Type="Number">6734</Data></Cell>
+    <Cell><Data ss:Type="Number">30532</Data></Cell>
+    <Cell><Data ss:Type="Number">7066</Data></Cell>
+    <Cell><Data ss:Type="Number">18463</Data></Cell>
+    <Cell><Data ss:Type="Number">6922</Data></Cell>
+    <Cell><Data ss:Type="Number">28615</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2300</Data></Cell>
+    <Cell><Data ss:Type="Number">6487</Data></Cell>
+    <Cell><Data ss:Type="Number">32187</Data></Cell>
+    <Cell><Data ss:Type="Number">6681</Data></Cell>
+    <Cell><Data ss:Type="Number">19441</Data></Cell>
+    <Cell><Data ss:Type="Number">7947</Data></Cell>
+    <Cell><Data ss:Type="Number">30178</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2400</Data></Cell>
+    <Cell><Data ss:Type="Number">7183</Data></Cell>
+    <Cell><Data ss:Type="Number">33906</Data></Cell>
+    <Cell><Data ss:Type="Number">6301</Data></Cell>
+    <Cell><Data ss:Type="Number">20190</Data></Cell>
+    <Cell><Data ss:Type="Number">6806</Data></Cell>
+    <Cell><Data ss:Type="Number">31915</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2500</Data></Cell>
+    <Cell><Data ss:Type="Number">7337</Data></Cell>
+    <Cell><Data ss:Type="Number">35659</Data></Cell>
+    <Cell><Data ss:Type="Number">6747</Data></Cell>
+    <Cell><Data ss:Type="Number">21147</Data></Cell>
+    <Cell><Data ss:Type="Number">7553</Data></Cell>
+    <Cell><Data ss:Type="Number">33762</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2600</Data></Cell>
+    <Cell><Data ss:Type="Number">7584</Data></Cell>
+    <Cell><Data ss:Type="Number">37430</Data></Cell>
+    <Cell><Data ss:Type="Number">6437</Data></Cell>
+    <Cell><Data ss:Type="Number">22006</Data></Cell>
+    <Cell><Data ss:Type="Number">7899</Data></Cell>
+    <Cell><Data ss:Type="Number">35188</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2700</Data></Cell>
+    <Cell><Data ss:Type="Number">9722</Data></Cell>
+    <Cell><Data ss:Type="Number">39166</Data></Cell>
+    <Cell><Data ss:Type="Number">8073</Data></Cell>
+    <Cell><Data ss:Type="Number">22753</Data></Cell>
+    <Cell><Data ss:Type="Number">22950</Data></Cell>
+    <Cell><Data ss:Type="Number">36903</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2800</Data></Cell>
+    <Cell><Data ss:Type="Number">9405</Data></Cell>
+    <Cell><Data ss:Type="Number">40864</Data></Cell>
+    <Cell><Data ss:Type="Number">47746</Data></Cell>
+    <Cell><Data ss:Type="Number">23811</Data></Cell>
+    <Cell><Data ss:Type="Number">15915</Data></Cell>
+    <Cell><Data ss:Type="Number">38012</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2900</Data></Cell>
+    <Cell><Data ss:Type="Number">21641</Data></Cell>
+    <Cell><Data ss:Type="Number">42650</Data></Cell>
+    <Cell><Data ss:Type="Number">12478</Data></Cell>
+    <Cell><Data ss:Type="Number">24739</Data></Cell>
+    <Cell><Data ss:Type="Number">21586</Data></Cell>
+    <Cell><Data ss:Type="Number">39469</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3000</Data></Cell>
+    <Cell><Data ss:Type="Number">16178</Data></Cell>
+    <Cell><Data ss:Type="Number">44474</Data></Cell>
+    <Cell><Data ss:Type="Number">13420</Data></Cell>
+    <Cell><Data ss:Type="Number">25733</Data></Cell>
+    <Cell><Data ss:Type="Number">10430</Data></Cell>
+    <Cell><Data ss:Type="Number">40949</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Zoom>72</Zoom>
+   <Selected/>
+   <LeftColumnVisible>2</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>16</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
